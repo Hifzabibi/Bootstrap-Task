@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitepace</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #0d2a63 !important;
+    }
+    .navbar-brand img {
+      height: 30px;
+      color: #ffffff;
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      margin: 0 10px;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ddd !important;
+    }
+    .btn-warning {
+      border-radius: 6px;
+      font-weight: 500;
+    }
+    .btn-primary {
+      background-color: #2c7be5;
+      border: none;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background-color: #0d2a63;
+      color: #fff;
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-section h1 {
+      font-weight: 700;
+    }
+    .hero-section p {
+      margin: 20px 0;
+      color: #d1d9e6;
+    }
+
+    /* Background Wave */
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('') no-repeat center;
+      background-size: cover;
+      opacity: 0.2;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+
+
+    /*-----section 2----*/
+    
+    .section-2 {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .section-2-text h1 {
+      font-weight: 700;
+      color:#212529;
+      font-size: 72px;
+    }
+    .section-2-text p {
+      color: #212529;
+      font-weight: 400;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+     .button-primary {
+      background-color: #2c7be5;
+      color: white;
+      padding: 15px 35px 15px 35px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+
+
+     .section-3 {
+      padding: 100px 0;
+      background: #fff;
+    }
+    .section-3-text h1 {
+       font-weight: 700;
+      color:#212529;
+      font-size: 72px;
+      margin-left: 25px;
+    }
+
+     .section-3-text p {
+      color: #212529;
+      font-weight: 400;
+      font-size: 18px;
+      margin: 20px 0;
+    margin-left: 25px;
+    }
+
+   .button-try {
+     margin-left: 25px;
+     background-color: #2c7be5;
+      color: white;
+      padding: 15px 35px 15px 35px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 500;
+}
+
+
+
+/*   section 4*/
+/*   section 5*/
+  .section-dark {
+      background-color: #083674; /* Dark Blue */
+      color: #fff;
+      padding: 60px 0;
+    }
+    .section-light {
+      background-color: #fff;
+      padding: 60px 0;
+    }
+    .img-box {
+      background-color: #CCE0FF;
+      width: 500px;
+      height: 250px;
+    }
+    .btn-custom {
+      background-color: #4DA3FF;
+      border: none;
+    }
+
+
+
+.fw-bold h2 {
+font-size: 72px;
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+  
+  <!-- Header / Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#">
+        <img src="Logo2.png" alt="Whitepace"> 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-warning">Login</a>
+          <a href="#" class="btn btn-primary">Try Whitepace free →</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <!-- Left Text -->
+        <div class="col-lg-6 col-md-12">
+          <h1>Get More Done with<br>whitepace</h1>
+          <p>Project management software that enables your teams to collaborate, 
+             plan, analyze and manage everyday tasks.</p>
+          <a href="#" class="btn btn-primary">Try Whitepace free →</a>
+        </div>
+        
+        <!-- Right Image -->
+        <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+          <img src="Image-container.png" alt="Hero Illustration" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+  <!-- section 2-->
+
+  
+  <section class="section-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Text -->
+        <div class="col-lg-6 col-md-12 section-2-text">
+          <h1>Project Management</h1>
+          <p>Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app.
+             Take photos with the mobile app and save them to a note.</p>
+          <a href="#" class="btn button-primary">Get Started →</a>
+        </div>
+        
+        <!-- Right Image Placeholder -->
+        <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+          <img src="Image-container.png" alt="Hero Illustration" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+<!----section-3-->
+
+
+  
+  <section class="section-3">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Text -->
+        
+        <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+          <img src="Work Together Image.png" alt="Hero Illustration" class="img-fluid rounded">
+        </div>
+
+       <!-- Right Image Placeholder -->
+        <div class="col-lg-6 col-md-12 section-3-text">
+          <h1>Work together</h1>
+          <p>With whitepace, share your notes with your colleagues and collaborate on them.
+           You can also publish a note to the internet and share the URL with others.</p>
+          <a href="#" class="Try button-try">Try it now →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+    <!-- Four Section -->
+  <section class="section-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text -->
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <h2 class="fw-bold">Use as <span class="text-decoration-underline">Extension</span></h2>
+          <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
+          <button class="btn btn-custom text-white">Let’s Go →</button>
+        </div>
+        <!-- Image -->
+        <div class="col-lg-6 col-md-12">
+          <div class="img-box">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- five Section -->
+  <section class="section-light">
+    <div class="container">
+      <div class="row align-items-center flex-lg-row-reverse">
+        <!-- Text -->
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <h2 class="fw-bold">Customise it to <span class="text-decoration-underline">your needs</span></h2>
+          <p>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
+          <button class="btn btn-custom text-white">Let’s Go →</button>
+        </div>
+        <!-- Image -->
+        <div class="col-lg-6 col-md-12">
+          <div class="img-box">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
