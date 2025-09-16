@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      background-color: #cee4fb;
+      width: 100%;
+      height: 974px;
+      display: flex;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .first {
+      width: 500px;
+      height: 900px;
+      box-sizing: border-box;
+      float: left;
+      position: relative;
+    }
+
+    .logo {
+      width: 600px;
+      padding: 20px;
+      margin-top: 170px;
+      margin-left: 60px;
+    }
+
+    .button img {
+      width: 400px;
+      height: 500px;
+      position: relative;
+      left: 0;
+      right: 70px;
+      margin-top: 70px;
+      margin-right: 90px;
+    }
+
+    .second {
+      width: 360px;
+      background-color: #ffffff;
+      height: 900px;
+      box-sizing: border-box;
+      position: absolute;
+      margin-left: 41%;
+      padding: 0%;
+    }
+
+    .third {
+      width: 600px;
+      height: 910px;
+      margin-top: 70px;
+      margin-left: 32%;
+      background-color: #ffffff;
+      display: grid;
+      box-sizing: border-box;
+      position: absolute;
+    }
+
+    .img1 {
+      margin: 0;
+    }
+
+    .img2 {
+      margin: 0;
+      margin-top: -7px;
+      margin-bottom: 20px;
+    }
+
+
+
+    /* Tablet screens */
+    @media (max-width: 991px) {
+      .hero {
+        flex-direction: column;
+        height: auto;
+      }
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .first, .second, .third {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+      }
+      .logo {
+        width: 100%;
+        margin: 40px auto 20px auto;
+      }
+      .button img {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+      }
+    }
+
+    /* Mobile screens */
+    @media (max-width: 576px) {
+      .logo {
+        width: 80%;
+        margin: 20px auto;
+      }
+      .button img {
+        width: 80%;
+        height: auto;
+      }
+      .first, .second, .third {
+        width: 100%;
+        margin: 15px 0;
+      }
+      .second img, .third img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <div class="col-lg-4 col-md-12">
+        <div class="first">
+          <div class="logo">
+            <img src="Logo.png" alt="logo">
+          </div>
+          <div class="button">
+            <img src="Group 4.png" alt="Group">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="second">
+          <img src="Image (6).png" alt="">
+          <img src="Image (5).png" alt="">
+          <img src="Image (3).png" alt="">
+          <img src="Image (4).png" alt="">
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="img1">
+          <img src="Image (8).png" alt="">
+        </div>
+        <div class="img2">
+          <img src="Image (9).png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
