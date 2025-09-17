@@ -13,7 +13,7 @@
 
     /* Navbar Styling */
     .navbar {
-      background-color: #0d2a63 !important;
+    background: #043873;
     }
     .navbar-brand img {
       height: 30px;
@@ -28,10 +28,11 @@
     }
     .btn-warning {
       border-radius: 6px;
+      background: #FFE492;
       font-weight: 500;
     }
     .btn-primary {
-      background-color: #2c7be5;
+      background: #4F9CF9;
       border: none;
       border-radius: 6px;
       font-weight: 500;
@@ -39,7 +40,7 @@
 
     /* Hero Section */
     .hero-section {
-      background-color: #0d2a63;
+     background: #043873;
       color: #fff;
       padding: 100px 0;
       position: relative;
@@ -47,6 +48,7 @@
     }
     .hero-section h1 {
       font-weight: 700;
+      font-size: 64px;
     }
     .hero-section p {
       margin: 20px 0;
@@ -91,7 +93,7 @@
     }
 
      .button-primary {
-      background-color: #2c7be5;
+     background: #4F9CF9;
       color: white;
       padding: 15px 35px 15px 35px;
       border: none;
@@ -122,7 +124,7 @@
 
    .button-try {
      margin-left: 25px;
-     background-color: #2c7be5;
+    background: #4F9CF9;
       color: white;
       padding: 15px 35px 15px 35px;
       border: none;
@@ -142,29 +144,348 @@
     .section-light {
       background-color: #fff;
       padding: 60px 0;
+      margin-top: 40px;
     }
     .img-box {
       background-color: #CCE0FF;
       width: 500px;
-      height: 250px;
+      height: 300px;
     }
     .btn-custom {
-      background-color: #4DA3FF;
+     background: #4F9CF9;
       border: none;
     }
 
+ .fw-bold, h1 {
+ font-size: 72px;
+ }
 
 
-.fw-bold h2 {
-font-size: 72px;
-}
+/*  pricing section */
+
+
+ 
+        .pricing-section {
+            padding: 80px 0;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-subtitle {
+            color: #212529;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-size: 72px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #212529;
+        }
+        
+        .pricing-card {
+            border: none;
+            border-radius: 14px;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .basic-card {
+            height: 600px;
+             margin-top: 30px;
+            border: 2px solid #ffeb3b;
+        }
+        
+        .professional-card {
+            background: #043873;
+            height: 650px;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .enterprise-card {
+              height: 600px;
+            border: 2px solid #ffeb3b;
+            margin-top: 30px;
+        }
+        
+        
+        .pricing-header {
+            padding: 20px 30px;
+            font-size: 18px;
+            margin-bottom: -50px;
+            
+        }
+        
+        .pricing-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            margin-top: 20px;
+        }
+        
+        .basic-card .pricing-title {
+            color: #212529;
+            padding: -25px;
+
+        }
+        
+        .professional-card .pricing-title {
+            color: #ffffff;
+            margin-top: 40px;
+            font-size: 24px;
+        }
+        
+        .enterprise-card .pricing-title {
+            color: #212529;
+            padding: -25px;
+        }
+        
+        .pricing-price {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin: 15px 0;
+        }
+        
+        .basic-card .pricing-price {
+            color: #212529;
+        }
+        
+        .professional-card .pricing-price {
+            color: #FFE492;
+            font-size: 36px;
+        }
+        
+        .enterprise-card .pricing-price {
+               color: #212529;
+        }
+        
+        .pricing-period {
+            color: #78909c;
+            font-size: 1rem;
+        }
+        
+        .professional-card .pricing-period {
+            color: #e3f2fd;
+        }
+        
+        .pricing-features {
+            padding: 30px;
+            flex-grow: 1;
+        }
+        
+        .pricing-features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .pricing-features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-features i {
+            margin-right: 12px;
+            font-size: 16px;
+        }
+        
+        .basic-card i {
+            color: #1976d2;
+        }
+        
+        .professional-card i {
+            color:#FFE492;
+        }
+        
+        .enterprise-card i {
+           color: #1976d2;
+
+        }
+        
+        .basic-card li {
+            color: #37474f;
+        }
+        
+        .professional-card li {
+            color: #ffffff;
+        }
+        
+        .enterprise-card li {
+            color: #37474f;
+        }
+        
+        .pricing-cta {
+            padding: 50px 5px;
+            margin-left: 20px;
+            margin-top: -70px;
+           
+        }
+        
+        .btn-pricing {
+            padding: 16px 40px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 50%;
+            font-size: 1.1rem;
+        }
+        
+        .basic-btn {
+            color: black;
+            border: 2px solid #ffeb3b;
+        }
+        
+        
+        .professional-btn {
+          background: #4F9CF9;
+            margin-bottom: 16px;
+            color: white;
+        }
+        
+        .enterprise-btn {
+            color: black;
+            border: 2px solid #ffeb3b;
+        }
+        
+      
+        
+        @media (max-width: 992px) {
+            .professional-card {
+                transform: scale(1);
+                height: 520px;
+                margin: 30px 0;
+            }
+            
+            .professional-card:hover {
+                transform: translateY(-10px);
+            }
+        }
 
 
 
+
+  /* Hero Section */
+
+
+    .hero-section {
+      background: #043873;
+      color: #fff;
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-section h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    .hero-section p {
+      font-size: 1.1rem;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+
+    /* Clients Section */
+    .clients-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+    .clients-section h2 {
+      font-weight: 700;
+      font-size: 70px;
+    }
+    .testimonial-card {
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      text-align: left;
+    }
+    .testimonial-card .quote {
+      font-size: 40px;
+      color: #0d47a1;
+    }
+    .testimonial-card p {
+      font-size: 1rem;
+      margin: 15px 0;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .testimonial-author img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+
+
+
+
+    
+    .footer-cta {
+      background: #043873;
+      color: #fff;
+      padding: 60px 0;
+    }
+    .footer-cta h2 {
+      font-weight: 700;
+    }
+    .footer-cta p {
+      margin: 15px 0;
+    }
+    .footer-main {
+     background: #043873;
+      color: #cfd8dc;
+      padding: 50px 0;
+    }
+    .footer-main h5 {
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .footer-main a {
+      color: #cfd8dc;
+      text-decoration: none;
+    }
+    .footer-main a:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+     background: #043873;
+      color: #90a4ae;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 15px 0;
+    }
+    .footer-social a {
+      color: #cfd8dc;
+      font-size: 18px;
+      margin-left: 15px;
+      transition: 0.3s;
+    }
+    .footer-social a:hover {
+      color: #fff;
+    }
 
 
   </style>
 </head>
+
+
 <body>
   
   <!-- Header / Navbar -->
@@ -179,10 +500,10 @@ font-size: 72px;
       
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Products <i class="bi bi-chevron-down ms-1"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solutions <i class="bi bi-chevron-down ms-1"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resources <i class="bi bi-chevron-down ms-1"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pricing <i class="bi bi-chevron-down ms-1"></i></a></li>
         </ul>
         <div class="d-flex gap-2">
           <a href="#" class="btn btn-warning">Login</a>
@@ -193,7 +514,8 @@ font-size: 72px;
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section">
+  <section class="hero-section" style="background-image: url('Element2.png');
+ background-repeat:no-repeat; background-position:left center; background-size:contain;">
     <div class="container hero-content">
       <div class="row align-items-center">
         <!-- Left Text -->
@@ -277,7 +599,7 @@ font-size: 72px;
       <div class="row align-items-center">
         <!-- Text -->
         <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-          <h2 class="fw-bold">Use as <span class="text-decoration-underline">Extension</span></h2>
+          <h1 class="fw-bold">Use as <span class="text-decoration-underline">Extension</span></h1>
           <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
           <button class="btn btn-custom text-white">Let’s Go →</button>
         </div>
@@ -289,14 +611,18 @@ font-size: 72px;
       </div>
     </div>
   </section>
+
+
+
   <!-- five Section -->
   <section class="section-light">
     <div class="container">
       <div class="row align-items-center flex-lg-row-reverse">
         <!-- Text -->
         <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-          <h2 class="fw-bold">Customise it to <span class="text-decoration-underline">your needs</span></h2>
-          <p>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
+          <h1 class="fw-bold">Customise it to <span class="text-decoration-underline">your needs</span></h1>
+          <p>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). 
+            Or create your own scripts and plugins using the Extension API.</p>
           <button class="btn btn-custom text-white">Let’s Go →</button>
         </div>
         <!-- Image -->
@@ -310,7 +636,328 @@ font-size: 72px;
   </section
 
 
-  <!-- Bootstrap JS -->
+
+
+
+  
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-header">
+                        <h1 class="section-title">Choose Your Plan</h1>
+                        <p class="section-subtitle">Whether you want to get organized, keep your personal life on track,
+                             or boost workplace productivity, Evernote has the right plan for you.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card basic-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Free</h3>
+                            <div class="pricing-price">$0</div>
+                            <p>Capture ideas and find them quickly</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Sync unlimited devices</li>
+                                <li><i class="fas fa-check-circle"></i> 10 GB monthly uploads</li>
+                                <li><i class="fas fa-check-circle"></i> 200 MB max. note size</li>
+                                <li><i class="fas fa-check-circle"></i> Customize Home dashboard and access extra widgets</li>
+                                <li><i class="fas fa-check-circle"></i> Connect primary Google Calendar account</li>
+                                <li><i class="fas fa-check-circle"></i> Add due dates, reminders, and notifications to your tasks</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-cta">
+                            <button class="btn btn-pricing basic-btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Plan (Recommended) -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card professional-card position-relative">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Personal</h3>
+                            <div class="pricing-price">$11.99</div>
+                            <p>Keep home and family on track</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                 <li><i class="fas fa-check-circle"></i> Sync unlimited devices</li>
+                                <li><i class="fas fa-check-circle"></i> 10 GB monthly uploads</li>
+                                <li><i class="fas fa-check-circle"></i> 200 MB max. note size</li>
+                                <li><i class="fas fa-check-circle"></i> Customize Home dashboard and access extra widgets</li>
+                                <li><i class="fas fa-check-circle"></i> Connect primary Google Calendar account</li>
+                                <li><i class="fas fa-check-circle"></i> Add due dates, reminders, and notifications to your tasks</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-cta">
+                            <button class="btn btn-pricing professional-btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card enterprise-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Organization</h3>
+                            <div class="pricing-price">$49.99</div>
+                            <p>Capture ideas and find them quickly</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Sync unlimited devices</li>
+                                <li><i class="fas fa-check-circle"></i> 10 GB monthly uploads</li>
+                                <li><i class="fas fa-check-circle"></i> 200 MB max. note size</li>
+                                <li><i class="fas fa-check-circle"></i> Customize Home dashboard and access extra widgets</li>
+                                <li><i class="fas fa-check-circle"></i> Connect primary Google Calendar account </li>
+                                <li><i class="fas fa-check-circle"></i> Add due dates, reminders, and notifications to your tasks </li>
+                            </ul>
+                        </div>
+                        <div class="pricing-cta">
+                            <button class="btn btn-pricing enterprise-btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+
+
+
+
+
+<section class="py-5 text-white position-relative" style="background-color:#0d2a63; background-image: url('BACKGROUND.png');
+ background-repeat:no-repeat; background-position:left center; background-size:contain; background-size: 300px 600px;">
+  <div class="container text-center mt-2 mb-2">
+    <h2 class="fw-bold">Your work, everywhere <u>you are</u></h2>
+    <p class="mt-3 mx-auto" style="max-width: 700px;">
+      Access your notes from your computer, phone or tablet by synchronizing with various services, 
+      including Whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. 
+      A terminal app is also available!
+    </p>
+    <a href="#" class="btn btn-primary mt-3">Try Taskey →</a>
+  </div>
+</section>
+
+
+
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Left Text -->
+      <div class="col-lg-6">
+        <h2 class="fw-bold">100% your data</h2>
+        <p class="text-muted mt-3">
+          The app is open source and your notes are saved to an open format, so you’ll always have access 
+          to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+        </p>
+        <a href="#" class="btn btn-primary mt-3">Read more →</a>
+      </div>
+      
+      <!-- Right Image -->
+      <div class="col-lg-6 text-center background: #4F9CF9;">
+        <img src="Element.png" 
+             alt="Element" class="img-fluid">
+      </div>
+    </div>
+  </div>
+ </section>
+
+
+
+
+
+
+<section class="py-5 bg-white">
+  <div class="container text-center">
+    <h3 class="fw-bold mb-25">Our Sponsors</h3>
+    <div class="row justify-content-center align-items-center g-4">
+      <div class="col-12 mb-5">
+        <img src="sponsors.png" 
+             alt="Sponsors" 
+             class="img-fluid mt-5" 
+             style="width:100%; height:auto;">
+      </div>
+    </div>
+  </div>
+ </section>
+
+
+
+
+<!-- Hero Section -->
+ <section class="hero-section text-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="Apps.png" alt="App Icons" class="img-fluid" style="max-width:350px;">
+      </div>
+      <div class="col-md-6 text-md-start text-center">
+        <h1>Work with Your Favorite Apps Using <span class="fw-bold">whitepace</span></h1>
+        <p>Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.</p>
+        <a href="#" class="btn btn-primary btn-lg">Read more →</a>
+      </div>
+    </div>
+  </div>
+ </section>
+
+
+
+
+<!-- Clients Section -->
+ <section class="clients-section py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-5">What Our Clients Say</span></h2>
+    <div class="row g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="testimonial-card bg-white">
+          <div class="quote"><img src="Quote.png" alt=""></div>
+          <p>Whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
+          <div class="testimonial-author">
+            <img src="Avater.png" alt="Client">
+            <div>
+              <strong>Oberon Shaw, MCH</strong><br>
+              <small>Head of Talent Acquisition, North America</small>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="testimonial-card bg-primary text-white">
+          <div class="quote text-white"><img src="Quote1.png" alt=""></div>
+          <p>Whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
+          <div class="testimonial-author">
+            <img src="Avator 2.png" alt="Client">
+            <div>
+              <strong>Oberon Shaw, MCH</strong><br>
+              <small>Head of Talent Acquisition, North America</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="testimonial-card bg-primary text-white">
+          <div class="quote text-white"><img src="Quote1.png" alt=""></div>
+          <p>Whitepace is designed as a collaboration tool for businesses that is a full project management solution.</p>
+          <div class="testimonial-author ">
+            <img src="Avater1.png" alt="Client">
+            <div>
+              <strong>Oberon Shaw, MCH </strong><br>
+              <small>Head of Talent Acquisition, North America</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ </section>
+
+
+
+
+<!-- Call to Action Section -->
+<section class="footer-cta text-center">
+  <div class="container">
+    <h2>Try Whitepace today</h2>
+    <p>Get started for free. Add your whole team as your needs grow.</p>
+    <a href="#" class="btn btn-light btn-lg mb-3">Try Taskey Free →</a>
+    <p>On a big team? Contact sales</p>
+    <div class="d-flex justify-content-center gap-4 mt-3">
+      <i class="bi bi-apple fs-1"></i>
+      <i class="bi bi-windows fs-1"></i>
+      <i class="bi bi-android2 fs-1"></i>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-main">
+    <div class="container">
+      <div class="row gy-4">
+        
+        <!-- Logo / About -->
+        <div class="col-md-3">
+          <h5>whitepace</h5>
+          <p>Whitepace was created for the new ways we live and work. We make a better workspace around the world.</p>
+        </div>
+
+        <!-- Product -->
+        <div class="col-md-2">
+          <h5>Product</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customer stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-md-2">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guides & tutorials</a></li>
+            <li><a href="#">Help center</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="col-md-2">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Media kit</a></li>
+          </ul>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="col-md-3">
+          <h5>Try It Today</h5>
+          <p>Get started for free. Add your whole team as your needs grow.</p>
+          <a href="#" class="btn btn-light btn-sm">Start Today →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-2 mb-md-0">
+        🌐 English &nbsp; | &nbsp; 
+        <a href="#">Terms & Privacy</a> &nbsp; | &nbsp; 
+        <a href="#">Security</a> &nbsp; | &nbsp; 
+        <a href="#">Status</a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!- Bootstrap JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
