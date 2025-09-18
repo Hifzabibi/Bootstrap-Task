@@ -14,10 +14,14 @@
     /* Navbar Styling */
     .navbar {
     background: #043873;
+    height: 100px;
     }
     .navbar-brand img {
       height: 30px;
       color: #ffffff;
+    }
+    .navbar-nav, ul {
+      padding-left: 120px;
     }
     .navbar-nav .nav-link {
       color: #fff !important;
@@ -124,8 +128,9 @@
 
    .button-try {
      margin-left: 25px;
-    background: #4F9CF9;
+     background: #4F9CF9;
       color: white;
+      text-decoration: none;
       padding: 15px 35px 15px 35px;
       border: none;
       border-radius: 6px;
@@ -159,6 +164,67 @@
  .fw-bold, h1 {
  font-size: 72px;
  }
+
+
+/* vector underline meading */
+
+ .underline-img {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px; 
+  z-index: 1;
+}
+
+.underline-img::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  width: 125%;
+  height: 90px; 
+  background: url('vector heading bottom.png') no-repeat center;
+  background-size: contain; 
+  z-index: -1;
+}
+.underline-img-blue {
+  position: relative;
+  display: inline-block;
+  z-index: 1; 
+}
+
+.underline-img-blue::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px; 
+  width: 110%;
+  height: 40px;
+  background: url('vector blue back heading.png') no-repeat center;
+  background-size: contain;
+  z-index: -1; 
+}
+
+.underline-img-client {
+  position: relative;
+  display: inline-block;
+  z-index: 1; 
+}
+
+.underline-img-client::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 9px;
+  width: 150%;
+  height: 60px; 
+  background: url('vector heading bottom.png') no-repeat center;
+  background-size: contain;
+  z-index: -1;
+}
+
+
+
+
 
 
 /*  pricing section */
@@ -389,7 +455,7 @@
     }
     .hero-section h1 {
       font-weight: 700;
-      font-size: 2.5rem;
+      font-size: 64px;
     }
     .hero-section p {
       font-size: 1.1rem;
@@ -398,6 +464,10 @@
     }
 
     /* Clients Section */
+
+
+
+
     .clients-section {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -410,29 +480,57 @@
       border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       padding: 30px;
+      min-height: 350px;
       text-align: left;
     }
     .testimonial-card .quote {
       font-size: 40px;
       color: #0d47a1;
+      margin-top: 10px;
     }
+  
     .testimonial-card p {
-      font-size: 1rem;
-      margin: 15px 0;
-    }
+  font-size: 1rem;
+  margin: 15px 0;
+  position: relative;
+}
+.testimonial-card p::after {
+  content: "";
+  display: block;
+  width: 100%;              /* line ki width */
+  height: 1px;              /* line ki thickness */
+  background-color: #000;    /* line ka color (black) */
+  margin-top: 30px;
+  margin-bottom: 30px;          /* text aur line ke beech gap */
+}
     .testimonial-author {
       display: flex;
       align-items: center;
+      font-size: 16px;
       margin-top: 20px;
     }
     .testimonial-author img {
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      margin-right: 15px;
+      margin-right: 20px;
     }
 
+   .client-name-black {
+  color: #043873;
+}
+.slider-img {
+  display: flex;            
+  justify-content: center;  
+  align-items: center;     
+  margin: 40px 0;         
+}
 
+.slider-img img {
+  max-width: 100%;   /* responsive image */
+  height: auto;
+  display: block;
+}
 
 
 
@@ -459,7 +557,7 @@
       color: #fff;
     }
     .footer-main a {
-      color: #cfd8dc;
+      color: #ffffff;
       text-decoration: none;
     }
     .footer-main a:hover {
@@ -472,14 +570,27 @@
       padding: 15px 0;
     }
     .footer-social a {
-      color: #cfd8dc;
+      color: #ffffff;
       font-size: 18px;
       margin-left: 15px;
       transition: 0.3s;
     }
     .footer-social a:hover {
-      color: #fff;
+      color: #ffffff;
     }
+   .mb-2.mb-md-0 {
+  color: #fff; /* text white */
+}
+
+.mb-2.mb-md-0 a {
+  color: #fff;              
+  text-decoration: none;    
+  margin: 0 30px;            
+}
+
+.mb-2.mb-md-0 a:hover {
+  text-decoration: underline; 
+}
 
 
   </style>
@@ -499,13 +610,13 @@
       </button>
       
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto  gap-4 ">
           <li class="nav-item"><a class="nav-link" href="#">Products <i class="bi bi-chevron-down ms-1"></i></a></li>
           <li class="nav-item"><a class="nav-link" href="#">Solutions <i class="bi bi-chevron-down ms-1"></i></a></li>
           <li class="nav-item"><a class="nav-link" href="#">Resources <i class="bi bi-chevron-down ms-1"></i></a></li>
           <li class="nav-item"><a class="nav-link" href="#">Pricing <i class="bi bi-chevron-down ms-1"></i></a></li>
         </ul>
-        <div class="d-flex gap-2">
+        <div class="d-flex gap-3">
           <a href="#" class="btn btn-warning">Login</a>
           <a href="#" class="btn btn-primary">Try Whitepace free →</a>
         </div>
@@ -545,7 +656,7 @@
       <div class="row align-items-center">
         <!-- Left Text -->
         <div class="col-lg-6 col-md-12 section-2-text">
-          <h1>Project Management</h1>
+          <h1>Project <span class="underline-img">Management</span></h1>
           <p>Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app.
              Take photos with the mobile app and save them to a note.</p>
           <a href="#" class="btn button-primary">Get Started →</a>
@@ -579,7 +690,7 @@
 
        <!-- Right Image Placeholder -->
         <div class="col-lg-6 col-md-12 section-3-text">
-          <h1>Work together</h1>
+          <h1  class="fw-bold"> Work <span class="underline-img">together</span></h1>
           <p>With whitepace, share your notes with your colleagues and collaborate on them.
            You can also publish a note to the internet and share the URL with others.</p>
           <a href="#" class="Try button-try">Try it now →</a>
@@ -599,7 +710,7 @@
       <div class="row align-items-center">
         <!-- Text -->
         <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-          <h1 class="fw-bold">Use as <span class="text-decoration-underline">Extension</span></h1>
+          <h1 class="fw-bold">Use as <span class="underline-img">Extension</span></h1>
           <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
           <button class="btn btn-custom text-white">Let’s Go →</button>
         </div>
@@ -620,7 +731,7 @@
       <div class="row align-items-center flex-lg-row-reverse">
         <!-- Text -->
         <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-          <h1 class="fw-bold">Customise it to <span class="text-decoration-underline">your needs</span></h1>
+          <h1 class="fw-bold">Customise it to <span class="underline-img">your needs</span></h1>
           <p>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). 
             Or create your own scripts and plugins using the Extension API.</p>
           <button class="btn btn-custom text-white">Let’s Go →</button>
@@ -646,7 +757,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-header">
-                        <h1 class="section-title">Choose Your Plan</h1>
+                        <h1 class="section-title">Choose <span class="underline-img">Your Plan</span></h1>
                         <p class="section-subtitle">Whether you want to get organized, keep your personal life on track,
                              or boost workplace productivity, Evernote has the right plan for you.</p>
                     </div>
@@ -736,7 +847,7 @@
 <section class="py-5 text-white position-relative" style="background-color:#0d2a63; background-image: url('BACKGROUND.png');
  background-repeat:no-repeat; background-position:left center; background-size:contain; background-size: 300px 600px;">
   <div class="container text-center mt-2 mb-2">
-    <h2 class="fw-bold">Your work, everywhere <u>you are</u></h2>
+    <h2 class="fw-bold">Your work, everywhere <span class="underline-img-blue"> you are</span></h2>
     <p class="mt-3 mx-auto" style="max-width: 700px;">
       Access your notes from your computer, phone or tablet by synchronizing with various services, 
       including Whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. 
@@ -753,7 +864,7 @@
     <div class="row align-items-center g-5">
       <!-- Left Text -->
       <div class="col-lg-6">
-        <h2 class="fw-bold">100% your data</h2>
+        <h2 class="fw-bold">100% <span class="underline-img">your data</span></h2>
         <p class="text-muted mt-3">
           The app is open source and your notes are saved to an open format, so you’ll always have access 
           to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
@@ -777,7 +888,7 @@
 
 <section class="py-5 bg-white">
   <div class="container text-center">
-    <h3 class="fw-bold mb-25">Our Sponsors</h3>
+    <h3 class="fw-bold mb-25">Our <span class="underline-img">sponsors</span></h3>
     <div class="row justify-content-center align-items-center g-4">
       <div class="col-12 mb-5">
         <img src="sponsors.png" 
@@ -797,10 +908,10 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 text-center mt-4 mt-md-0">
-        <img src="Apps.png" alt="App Icons" class="img-fluid" style="max-width:350px;">
+        <img src="Apps.png" alt="App Icons" class="img-fluid" style="max-width:400px;">
       </div>
       <div class="col-md-6 text-md-start text-center">
-        <h1>Work with Your Favorite Apps Using <span class="fw-bold">whitepace</span></h1>
+        <h1>Work with Your Favorite Apps Using whitepace</h1>
         <p>Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.</p>
         <a href="#" class="btn btn-primary btn-lg">Read more →</a>
       </div>
@@ -814,7 +925,7 @@
 <!-- Clients Section -->
  <section class="clients-section py-5 bg-light">
   <div class="container text-center">
-    <h2 class="mb-5">What Our Clients Say</span></h2>
+    <h2 class="mb-5">What Our Clients <span class="underline-img-client">Say</span></h2>
     <div class="row g-4">
       
       <!-- Card 1 -->
@@ -826,7 +937,7 @@
             <img src="Avater.png" alt="Client">
             <div>
               <strong>Oberon Shaw, MCH</strong><br>
-              <small>Head of Talent Acquisition, North America</small>
+              <small>Head of Talent Acquisition, North <br> America</small>
             </div>
           </div>
         </div>
@@ -839,8 +950,8 @@
           <div class="testimonial-author">
             <img src="Avator 2.png" alt="Client">
             <div>
-              <strong>Oberon Shaw, MCH</strong><br>
-              <small>Head of Talent Acquisition, North America</small>
+              <strong class="client-name-black">Oberon Shaw, MCH</strong><br>
+              <small>Head of Talent Acquisition, North <br> America</small>
             </div>
           </div>
         </div>
@@ -854,15 +965,15 @@
           <div class="testimonial-author ">
             <img src="Avater1.png" alt="Client">
             <div>
-              <strong>Oberon Shaw, MCH </strong><br>
-              <small>Head of Talent Acquisition, North America</small>
+             <strong class="client-name-black">Oberon Shaw, MCH</strong><br>
+              <small>Head of Talent Acquisition, North <br> America</small>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
+  <div class="slider-img"><img src="Slider.png" alt=""></div>
  </section>
 
 
@@ -873,7 +984,7 @@
   <div class="container">
     <h2>Try Whitepace today</h2>
     <p>Get started for free. Add your whole team as your needs grow.</p>
-    <a href="#" class="btn btn-light btn-lg mb-3">Try Taskey Free →</a>
+    <a href="#" class="btn button-primary">Try Taskey Free →</a>
     <p>On a big team? Contact sales</p>
     <div class="d-flex justify-content-center gap-4 mt-3">
       <i class="bi bi-apple fs-1"></i>
@@ -929,7 +1040,7 @@
         <div class="col-md-3">
           <h5>Try It Today</h5>
           <p>Get started for free. Add your whole team as your needs grow.</p>
-          <a href="#" class="btn btn-light btn-sm">Start Today →</a>
+          <a href="#" class="btn button-primary">Start Today →</a>
         </div>
       </div>
     </div>
@@ -939,10 +1050,11 @@
   <div class="footer-bottom">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
       <div class="mb-2 mb-md-0">
-        🌐 English &nbsp; | &nbsp; 
-        <a href="#">Terms & Privacy</a> &nbsp; | &nbsp; 
-        <a href="#">Security</a> &nbsp; | &nbsp; 
+        🌐 English<i class="bi bi-chevron-down ms-1"></i> 
+        <a href="#">Terms & Privacy</a>
+        <a href="#">Security</a>
         <a href="#">Status</a>
+       <a href="#"> ©2021 Whitepace LLC.</a>
       </div>
       <div class="footer-social">
         <a href="#"><i class="bi bi-facebook"></i></a>
