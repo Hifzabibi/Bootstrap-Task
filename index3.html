@@ -21,7 +21,7 @@
       color: #ffffff;
     }
     .navbar-nav, ul {
-      padding-left: 120px;
+      padding-left: 220px;
     }
     .navbar-nav .nav-link {
       color: #fff !important;
@@ -56,6 +56,7 @@
     }
     .hero-section p {
       margin: 20px 0;
+      font-size: 18px;
       color: #d1d9e6;
     }
 
@@ -108,13 +109,15 @@
 
 
      .section-3 {
-      padding: 100px 0;
+      padding: 60px 0;
       background: #fff;
+      margin-bottom: 20px;
     }
     .section-3-text h1 {
        font-weight: 700;
       color:#212529;
       font-size: 72px;
+      margin-bottom: -40px;
       margin-left: 25px;
     }
 
@@ -122,7 +125,7 @@
       color: #212529;
       font-weight: 400;
       font-size: 18px;
-      margin: 20px 0;
+      margin: 50px 0;
     margin-left: 25px;
     }
 
@@ -136,6 +139,13 @@
       border-radius: 6px;
       font-weight: 500;
 }
+.section-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 8px; 
+}
+
 
 
 
@@ -164,6 +174,91 @@
  .fw-bold, h1 {
  font-size: 72px;
  }
+
+
+
+
+ .section-dark {
+      background-color: #003366;
+      color: white;
+      padding: 80px 0;
+      margin-bottom: 60px;
+    }
+    .section-light {
+      background-color: #ffffff;
+      color: black;
+      padding: 80px 0;
+      margin-bottom: 20px;
+    }
+    .custom-heading {
+      font-size: 72px;
+      font-weight: bold;
+      line-height: 1.2;
+      white-space: nowrap; /* keep in one line */
+    }
+    .custom-paragraph {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .custom-img {
+      background-color: #cce5ff;
+      height: 380px;
+      width: 100%;
+      border: 2px dashed #99c2ff;
+    }
+    .btn-custom {
+      background-color: #0066ff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #0047b3;
+    }
+
+    /* spacing between left & right columns */
+    .content-col {
+      padding-right: 30px;
+    }
+    .image-col {
+      padding-left: 30px;
+    }
+
+    /* RESPONSIVE FIXES */
+    @media (max-width: 991px) {
+      .custom-heading {
+        font-size: 48px;
+        white-space: normal;
+      }
+      .custom-img {
+        height: 300px;
+      }
+      .content-col, .image-col {
+        padding: 0; /* remove side padding on tablet */
+      }
+    }
+    @media (max-width: 767px) {
+      .custom-heading {
+        font-size: 32px;
+        text-align: center;
+      }
+      .custom-paragraph {
+        font-size: 16px;
+        text-align: center;
+      }
+      .btn-custom {
+        display: block;
+        margin: 0 auto;
+      }
+      .custom-img {
+        height: 220px;
+        margin-bottom: 20px;
+      }
+    }
 
 
 /* vector underline meading */
@@ -236,7 +331,7 @@
         }
         .section-header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
         
         .section-subtitle {
@@ -252,195 +347,102 @@
             color: #212529;
         }
         
-        .pricing-card {
-            border: none;
-            border-radius: 14px;
-            transition: all 0.3s ease;
-            overflow: hidden;
-            height: 550px;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .basic-card {
-            height: 600px;
-             margin-top: 30px;
-            border: 2px solid #ffeb3b;
-        }
-        
-        .professional-card {
-            background: #043873;
-            height: 650px;
-            color: white;
-            transform: scale(1.05);
-        }
-        
-        .enterprise-card {
-              height: 600px;
-            border: 2px solid #ffeb3b;
-            margin-top: 30px;
-        }
-        
-        
-        .pricing-header {
-            padding: 20px 30px;
-            font-size: 18px;
-            margin-bottom: -50px;
-            
-        }
-        
-        .pricing-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 2px;
-            margin-top: 20px;
-        }
-        
-        .basic-card .pricing-title {
-            color: #212529;
-            padding: -25px;
+    .pricing-section {
+      padding: 70px 0;
+      text-align: center;
+    }
 
-        }
-        
-        .professional-card .pricing-title {
-            color: #ffffff;
-            margin-top: 40px;
-            font-size: 24px;
-        }
-        
-        .enterprise-card .pricing-title {
-            color: #212529;
-            padding: -25px;
-        }
-        
-        .pricing-price {
-            font-size: 3.2rem;
-            font-weight: 800;
-            margin: 15px 0;
-        }
-        
-        .basic-card .pricing-price {
-            color: #212529;
-        }
-        
-        .professional-card .pricing-price {
-            color: #FFE492;
-            font-size: 36px;
-        }
-        
-        .enterprise-card .pricing-price {
-               color: #212529;
-        }
-        
-        .pricing-period {
-            color: #78909c;
-            font-size: 1rem;
-        }
-        
-        .professional-card .pricing-period {
-            color: #e3f2fd;
-        }
-        
-        .pricing-features {
-            padding: 30px;
-            flex-grow: 1;
-        }
-        
-        .pricing-features ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .pricing-features li {
-            padding: 8px 0;
-            display: flex;
-            align-items: center;
-        }
-        
-        
-        .pricing-features li:last-child {
-            border-bottom: none;
-        }
-        
-        .pricing-features i {
-            margin-right: 12px;
-            font-size: 16px;
-        }
-        
-        .basic-card i {
-            color: #1976d2;
-        }
-        
-        .professional-card i {
-            color:#FFE492;
-        }
-        
-        .enterprise-card i {
-           color: #1976d2;
+    .pricing-card {
+      border-radius: 10px;
+      padding: 30px;
+      justify-content: left;
+      text-align: left;
+      height: 350px;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+    }
 
-        }
-        
-        .basic-card li {
-            color: #37474f;
-        }
-        
-        .professional-card li {
-            color: #ffffff;
-        }
-        
-        .enterprise-card li {
-            color: #37474f;
-        }
-        
-        .pricing-cta {
-            padding: 50px 5px;
-            margin-left: 20px;
-            margin-top: -70px;
-           
-        }
-        
-        .btn-pricing {
-            padding: 16px 40px;
-            border-radius: 10px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            width: 50%;
-            font-size: 1.1rem;
-        }
-        
-        .basic-btn {
-            color: black;
-            border: 2px solid #ffeb3b;
-        }
-        
-        
-        .professional-btn {
-          background: #4F9CF9;
-            margin-bottom: 16px;
-            color: white;
-        }
-        
-        .enterprise-btn {
-            color: black;
-            border: 2px solid #ffeb3b;
-        }
-        
-      
-        
-        @media (max-width: 992px) {
-            .professional-card {
-                transform: scale(1);
-                height: 520px;
-                margin: 30px 0;
-            }
-            
-            .professional-card:hover {
-                transform: translateY(-10px);
-            }
-        }
+    .pricing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .pricing-card.active {
+      background-color: #11357e;
+      color: #fff;
+      height: 490px;
+      border: none;
+    }
+
+    .pricing-card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+     .pricing-card p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .pricing-card .price {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .pricing-card ul li {
+      margin-bottom: 12px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .pricing-card ul li img {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+    }
+
+    /* Active plan icons → yellow */
+    .pricing-card.active ul li img {
+      filter: brightness(0) saturate(100%) invert(85%) sepia(42%) saturate(4000%) hue-rotate(355deg) brightness(95%) contrast(92%);
+    }
+
+    .btn-pricing {
+      width: 50%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 8px;
+    }
+ 
 
 
+    /* Yellow border for Free & Organization cards */
+    .pricing-card:not(.active) {
+      border: 1px solid#FFE492;
+    }
+
+    /* Yellow border button for Free & Organization */
+    .pricing-card:not(.active) .btn-pricing {
+      border: 1px solid #FFE492;
+      color: #333;
+    }
+
+    /* Active plan button */
+    .pricing-card.active .btn-pricing {
+      background-color: #0066ff;
+      color: #ffffff;
+      font-weight: bold;
+    }
 
 
   /* Hero Section */
@@ -455,10 +457,10 @@
     }
     .hero-section h1 {
       font-weight: 700;
-      font-size: 64px;
+      font-size: 72px;
     }
     .hero-section p {
-      font-size: 1.1rem;
+      font-size:18px;
       margin-top: 15px;
       margin-bottom: 25px;
     }
@@ -474,7 +476,7 @@
     }
     .clients-section h2 {
       font-weight: 700;
-      font-size: 70px;
+      font-size: 72px;
     }
     .testimonial-card {
       border-radius: 12px;
@@ -490,7 +492,7 @@
     }
   
     .testimonial-card p {
-  font-size: 1rem;
+  font-size: 18px;
   margin: 15px 0;
   position: relative;
 }
@@ -970,81 +972,79 @@
 <!----section-3-->
 
 
-  
   <section class="section-3">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Left Text -->
-        
-        <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
-          <img src="Work Together Image.png" alt="Hero Illustration" class="img-fluid rounded">
-        </div>
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Image -->
+      <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+        <img src="Work Together Image.png" alt="Hero Illustration" class="img-fluid">
+      </div>
 
-       <!-- Right Image Placeholder -->
-        <div class="col-lg-6 col-md-12 section-3-text">
-          <h1  class="fw-bold"> Work <span class="underline-img">together</span></h1>
-          <p>With whitepace, share your notes with your colleagues and collaborate on them.
-           You can also publish a note to the internet and share the URL with others.</p>
-          <a href="#" class="Try button-try">Try it now →</a>
-        </div>
+      <!-- Right Text -->
+      <div class="col-lg-6 col-md-12 section-3-text">
+        <h1 class="fw-bold">Work <span class="underline-img">together</span></h1>
+        <p>
+          With whitepace, share your notes with your colleagues and collaborate on them.
+          You can also publish a note to the internet and share the URL with others.
+        </p>
+        <a href="#" class="button-try">Try it now →</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
 
 
 
 
-    <!-- Four Section -->
+
+  <!-- First Section -->
   <section class="section-dark">
     <div class="container">
       <div class="row align-items-center">
-        <!-- Text -->
-        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-          <h1 class="fw-bold">Use as <span class="underline-img">Extension</span></h1>
-          <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
-          <button class="btn btn-custom text-white">Let’s Go →</button>
+        <!-- Left Content -->
+        <div class="col-md-6 mb-4 mb-md-0 content-col">
+          <h2 class="custom-heading">Use as <span class="underline-img">Extension</span></h2>
+          <p class="custom-paragraph">
+            Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
+          </p>
+          <button class="btn btn-custom">Let’s Go →</button>
         </div>
-        <!-- Image -->
-        <div class="col-lg-6 col-md-12">
-          <div class="img-box">
-          </div>
+        <!-- Right Image -->
+        <div class="col-md-6 image-col">
+          <div class="custom-img"></div>
         </div>
       </div>
     </div>
   </section>
 
-
-
-  <!-- five Section -->
+  <!-- Second Section -->
   <section class="section-light">
     <div class="container">
-      <div class="row align-items-center flex-lg-row-reverse">
-        <!-- Text -->
-        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-          <h1 class="fw-bold">Customise it to <span class="underline-img">your needs</span></h1>
-          <p>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). 
-            Or create your own scripts and plugins using the Extension API.</p>
-          <button class="btn btn-custom text-white">Let’s Go →</button>
+      <div class="row align-items-center">
+        <!-- Left Image -->
+        <div class="col-md-6 mb-4 mb-md-0 content-col">
+          <div class="custom-img"></div>
         </div>
-        <!-- Image -->
-        <div class="col-lg-6 col-md-12">
-          <div class="img-box">
-            
-          </div>
+        <!-- Right Content -->
+        <div class="col-md-6 image-col">
+          <h2 class="custom-heading">Customise it to <br><span class="underline-img">your needs</span></h2>
+          <p class="custom-paragraph">
+            Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
+          </p>
+          <button class="btn btn-custom">Let’s Go →</button>
         </div>
       </div>
     </div>
-  </section
-
-
+  </section>
 
 
 
   
     <!-- Pricing Section -->
-    <section class="pricing-section">
+<section class="pricing-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -1056,84 +1056,63 @@
                 </div>
             </div>
             
-            <div class="row">
-                <!-- Basic Plan -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="pricing-card basic-card">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Free</h3>
-                            <div class="pricing-price">$0</div>
-                            <p>Capture ideas and find them quickly</p>
-                        </div>
-                        <div class="pricing-features">
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Sync unlimited devices</li>
-                                <li><i class="fas fa-check-circle"></i> 10 GB monthly uploads</li>
-                                <li><i class="fas fa-check-circle"></i> 200 MB max. note size</li>
-                                <li><i class="fas fa-check-circle"></i> Customize Home dashboard and access extra widgets</li>
-                                <li><i class="fas fa-check-circle"></i> Connect primary Google Calendar account</li>
-                                <li><i class="fas fa-check-circle"></i> Add due dates, reminders, and notifications to your tasks</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-cta">
-                            <button class="btn btn-pricing basic-btn">Get Started</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Professional Plan (Recommended) -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="pricing-card professional-card position-relative">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Personal</h3>
-                            <div class="pricing-price">$11.99</div>
-                            <p>Keep home and family on track</p>
-                        </div>
-                        <div class="pricing-features">
-                            <ul>
-                                 <li><i class="fas fa-check-circle"></i> Sync unlimited devices</li>
-                                <li><i class="fas fa-check-circle"></i> 10 GB monthly uploads</li>
-                                <li><i class="fas fa-check-circle"></i> 200 MB max. note size</li>
-                                <li><i class="fas fa-check-circle"></i> Customize Home dashboard and access extra widgets</li>
-                                <li><i class="fas fa-check-circle"></i> Connect primary Google Calendar account</li>
-                                <li><i class="fas fa-check-circle"></i> Add due dates, reminders, and notifications to your tasks</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-cta">
-                            <button class="btn btn-pricing professional-btn">Get Started</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Enterprise Plan -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="pricing-card enterprise-card">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Organization</h3>
-                            <div class="pricing-price">$49.99</div>
-                            <p>Capture ideas and find them quickly</p>
-                        </div>
-                        <div class="pricing-features">
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Sync unlimited devices</li>
-                                <li><i class="fas fa-check-circle"></i> 10 GB monthly uploads</li>
-                                <li><i class="fas fa-check-circle"></i> 200 MB max. note size</li>
-                                <li><i class="fas fa-check-circle"></i> Customize Home dashboard and access extra widgets</li>
-                                <li><i class="fas fa-check-circle"></i> Connect primary Google Calendar account </li>
-                                <li><i class="fas fa-check-circle"></i> Add due dates, reminders, and notifications to your tasks </li>
-                            </ul>
-                        </div>
-                        <div class="pricing-cta">
-                            <button class="btn btn-pricing enterprise-btn">Get Started</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Free Plan -->
+      <div class="col-md-4">
+        <div class="pricing-card h-100">
+          <h3>Free</h3>
+          <p class="price">$0</p>
+          <ul>
+            <li><img src="icon.png" alt="check"> Sync unlimited devices</li>
+            <li><img src="icon.png" alt="check"> 10 GB monthly uploads</li>
+            <li><img src="icon.png" alt="check"> 200 MB max. note size</li>
+            <li><img src="icon.png" alt="check"> Customize Home dashboard and access extra widgets</li>
+            <li><img src="icon.png" alt="check"> Connect primary Google Calendar account</li>
+            <li><img src="icon.png" alt="check"> Add due dates, reminders, and notifications to your tasks</li>
+          </ul>
+          <button class="btn btn-pricing">Get Started</button>
         </div>
-  </section>
+      </div>
+
+    <!-- Personal Plan -->
+<div class="col-md-4">
+  <div class="pricing-card active">
+    <h3>Personal</h3>
+    <p class="price">$11.99</p>
+    <ul>
+      <li><img src="icon.png" alt="check"> Sync unlimited devices</li>
+      <li><img src="icon.png" alt="check"> 10 GB monthly uploads</li>
+      <li><img src="icon.png" alt="check"> 200 MB max. note size</li>
+      <li><img src="icon.png" alt="check"> Customize Home dashboard and access extra widgets</li>
+      <li><img src="icon.png" alt="check"> Connect primary Google Calendar account</li>
+      <li><img src="icon.png" alt="check"> Add due dates, reminders, and notifications to your tasks</li>
+    </ul>
+    <button class="btn btn-pricing">Get Started</button>
+  </div>
+</div>
 
 
+      <!-- Organization Plan -->
+      <div class="col-md-4">
+        <div class="pricing-card h-100">
+          <h3>Organization</h3>
+          <p class="price">$49.99</p>
+          <ul>
+            <li><img src="icon.png" alt="check"> Sync unlimited devices</li>
+            <li><img src="icon.png" alt="check"> 10 GB monthly uploads</li>
+            <li><img src="icon.png" alt="check"> 200 MB max. note size</li>
+            <li><img src="icon.png" alt="check"> Customize Home dashboard and access extra widgets</li>
+            <li><img src="icon.png" alt="check"> Connect primary Google Calendar account</li>
+            <li><img src="icon.png" alt="check"> Add due dates, reminders, and notifications to your tasks</li>
+          </ul>
+          <button class="btn btn-pricing">Get Started</button>
+        </div>
+      </div>
 
+    </div>
+  </div>
+</section>
 
 
 <section class="py-5 text-white position-relative" style="background-color:#0d2a63; background-image: url('BACKGROUND.png');
@@ -1200,7 +1179,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 text-center mt-4 mt-md-0">
-        <img src="Apps.png" alt="App Icons" class="img-fluid" style="max-width:400px;">
+        <img src="Apps.png" alt="App Icons" class="img-fluid" style="max-width:100%;">
       </div>
       <div class="col-md-6 text-md-start text-center">
         <h1>Work with Your Favorite Apps Using whitepace</h1>
