@@ -9,36 +9,47 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Header / Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-white" href="#">
-        <img src="Logo2.png" alt="Whitepace">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+ <!-- Header / Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark" style="background:#043873; height:90px;">
+  <div class="container d-flex align-items-center justify-content-between">
 
-      </button>
+    <!-- Brand Logo (fixed size) -->
+    <a class="navbar-brand fw-bold text-white flex-shrink-0" href="#">
+      <img src="Logo2.png" alt="Whitepace" style="height:40px; width:auto; max-width:200px;">
+    </a>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto  gap-4 ">
-          <li class="nav-item"><a class="nav-link" href="#">Products <i class="bi bi-chevron-down ms-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Solutions <i class="bi bi-chevron-down ms-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Resources <i class="bi bi-chevron-down ms-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Pricing <i class="bi bi-chevron-down ms-1"></i></a></li>
-        </ul>
-        <div class="d-flex gap-3">
-          <a href="#" class="btn btn-warning">Login</a>
-          <a href="#" class="btn btn-primary">Try Whitepace free →</a>
-        </div>
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+      <!-- Center Nav Items -->
+      <ul class="navbar-nav mx-auto text-center gap-lg-2 mt-3 mt-md-0">
+        <li class="nav-item"><a class="nav-link" href="#">Products <i class="bi bi-chevron-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Solutions <i class="bi bi-chevron-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Resources <i class="bi bi-chevron-down ms-1"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing <i class="bi bi-chevron-down ms-1"></i></a></li>
+      </ul>
+
+      <!-- Right Buttons -->
+      <div class="d-flex flex-column flex-md-row gap-4 mt-3 mt-md-0">
+        <a href="#" class="btn btn-warning px-4 py-2">Login</a>
+        <a href="#" class="btn btn-primary px-4 py-2">Try Whitepace free →</a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 
+
+
+  
   <section class="hero">
     <div class="container">
       <div class="row align-items-center">
@@ -297,63 +308,98 @@
 
 
 
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center g-5">
 
+      <!-- Right Image (top on small screens) -->
+      <div class="col-lg-6 col-md-12 text-center order-1 order-lg-2 mt-4 mt-lg-0 pt-5">
+        <img src="Element.png" alt="Element" class="img-fluid">
+      </div>
 
-  <section class="py-5 bg-white">
-    <div class="container">
-      <div class="row align-items-center g-5">
+      <!-- Left Text -->
+      <div class="col-lg-6 col-md-12 order-2 order-lg-1 
+                  d-flex flex-column justify-content-center 
+                  text-center text-md-start">
 
-        <!-- Right Image (top on small screens) -->
-        <div class="col-lg-6 col-md-12 text-center order-1 order-lg-2 mt-4 mt-lg-0 pt-5">
-          <img src="Element.png" alt="Element" class="img-fluid">
-        </div>
+        <h2 class="fw-bold display-6 py-3 mt-4 mb-2">
+          100% <span class="underline-img">your data</span>
+        </h2>
 
-        <!-- Left Text -->
-        <div class="col-lg-6 col-md-12 
-                  order-2 order-lg-1 
-                  pt-2 pb-5 
-                  text-center text-md-start 
-                  d-flex flex-column align-items-center align-items-md-start">
+        <p class="text-muted small px-2">
+          The app is open source and your notes are saved to an open format,
+          so you’ll always have access to them. Uses End-To-End Encryption (E2EE)
+          to secure your notes and ensure no-one but yourself can access them.
+        </p>
 
-          <h2 class="fw-bold display-6 display-md-5 display-lg-4 py-3 text-nowrap  mt-5 mb-0">
-            100% <span class="underline-img">your data</span>
-          </h2>
-
-          <p class="text-muted mt-0 fs-9 fs-md-5">
-            The app is open source and your notes are saved to an open format,
-            so you’ll always have access to them. Uses End-To-End Encryption (E2EE)
-            to secure your notes and ensure no-one but yourself can access them.
-          </p>
-
+        <div class="d-flex justify-content-center justify-content-md-start">
           <a href="#" class="btn btn-primary btn-lg mt-3">Read more →</a>
         </div>
-
       </div>
-    </div>
-  </section>
 
-<section class="py-5 bg-white">
-  <div class="container text-center">
-    <h3 class="fw-bold mb-5">
+    </div>
+  </div>
+
+
+</section>
+<section class="py-5">
+  <div class="container-fluid px-lg-5 px-5"> <!-- zyada left-right margin -->
+    <div class="row justify-content-center gx-2 gy-5"> <!-- gx kam = gap kam -->
+       <h3 class="fw-bold mb-5 text-center">
       Our <span class="underline-img">sponsors</span>
     </h3>
-
-    <div class="row justify-content-center align-items-center g-4">
-
-      <div class="col-6 col-md-3">
-        <img src="Apple.png" alt="Apple" class="img-fluid d-block" style="max-width:200px;">
+      
+      <!-- Image 1 -->
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <img src="Apple.png" alt="Apple" style="max-width:180px;">
       </div>
 
-      <div class="col-6 col-md-3">
-        <img src="Microsoft.png" alt="Microsoft" class="img-fluid d-block" style="max-width:200px;">
+      <!-- Image 2 -->
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <img src="Microsoft.png" alt="Microsoft" style="max-width:180px;">
       </div>
 
-      <div class="col-6 col-md-3">
-        <img src="Slack.png" alt="Slack" class="img-fluid d-block" style="max-width:200px;">
+      <!-- Image 3 -->
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <img src="Slack.png" alt="Slack"  style="max-width:180px;">
       </div>
 
-      <div class="col-6 col-md-3">
-        <img src="Google.png" alt="Google" class="img-fluid d-block" style="max-width:200px;">
+      <!-- Image 4 -->
+      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+        <img src="Google.png" alt="Google" style="max-width:180px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Hero Section -->
+<section class="hero-section text-center py-6 text-white mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Image (smaller width on lg screens) -->
+      <div class="col-lg-5 col-md-12 text-center mb-4 mb-lg-0">
+        <img src="Apps.png" alt="App Icons" 
+             class="img-fluid" 
+             style="max-width: 80%; height: auto;">
+      </div>
+
+      <!-- Right Text (larger width on lg screens) -->
+      <div class="col-lg-7 col-md-12 text-lg-start text-center">
+        <h1 class="fw-bold mb-3">
+          Work with Your Favorite Apps Using whitepace
+        </h1>
+        <p class="mb-4">
+          Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier 
+          to have all the tools you need for your project success.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg">
+          Read more →
+        </a>
       </div>
 
     </div>
@@ -364,29 +410,8 @@
 
 
 
-
-  <!-- Hero Section -->
-  <section class="hero-section text-center">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-md-12 text-md-start mt-4 mt-md-0">
-          <img src="Apps.png" alt="App Icons" class="img-fluid" style="max-width:100%;">
-        </div>
-        <div class="col-lg-6 col-md-12 text-md-start text-center pt-2">
-          <h1>Work with Your Favorite Apps Using whitepace</h1>
-          <p>Whitepace teams up with your favorite software.Integrate with over 1000+ apps with Zapier to have all the
-            tools you need for your project success.</p>
-          <a href="#" class="btn btn-primary btn-lg">Read more →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
   <!-- Clients Section -->
-  <section class="clients-section py-5 bg-light">
+  <section class="clients-section py-5">
     <div class="container text-center">
       <h2 class="mb-5">What Our Clients <span class="underline-img-client">Say</span></h2>
       <div class="row g-4">

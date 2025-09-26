@@ -1,45 +1,50 @@
  body {
       font-family: Arial, sans-serif;
     }
+/* Navbar Styling */
+.navbar {
+  background: #043873;
+  height: 100px;
+}
 
-    /* Navbar Styling */
-    .navbar {
-      background: #043873;
-      height: 100px;
-    }
+.navbar-brand img {
+  height: 50px;       /* Fixed logo height */
+  max-width: 120px;   /* Prevent overflow */
+}
 
-    .navbar-brand img {
-      height: 30px;
-      color: #ffffff;
-    }
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin: 0 7px; /* Consistent spacing */
+}
+.navbar-nav {
+  max-width: 600px;
+  float: right;
+  padding-left: 10px;
+}
+.navbar-collapse {
+  max-width: 70%;
+  margin: 0%;
+}
+.navbar-nav .nav-link:hover {
+  color: #ddd !important;
+}
 
-    .navbar-nav,
-    ul {
-      padding-left: 220px;
-    }
+.btn-warning {
+  background: #FFE492;
+  padding: 10px 25px;
+  font-weight: 500;
+  margin: 0%;
+  white-space: nowrap; /* Prevent wrapping */
+}
 
-    .navbar-nav .nav-link {
-      color: #fff !important;
-      margin: 0 10px;
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: #ddd !important;
-    }
-
-    .btn-warning {
-      background: #FFE492;
-      padding: 10px 25px 10px 25px;
-      font-weight: 500;
-    }
-
-    .btn-primary {
-      background: #4F9CF9;
-      border: none;
-      border-radius: 6px;
-      padding: 10px 20px 10px 20px;
-      font-weight: 500;
-    }
+.btn-primary {
+  background: #4F9CF9;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  white-space: nowrap; /* Prevent wrapping */
+}
 
     /* Hero Section */
     .hero {
