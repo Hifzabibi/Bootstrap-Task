@@ -12,40 +12,39 @@
 
 <body>
 
- <!-- Header / Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark" style="background:#043873; height:90px;">
-  <div class="container d-flex align-items-center justify-content-between">
+ <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
 
-    <!-- Brand Logo (fixed size) -->
-    <a class="navbar-brand fw-bold text-white flex-shrink-0" href="#">
-      <img src="Logo2.png" alt="Whitepace" style="height:40px; width:auto; max-width:200px;">
-    </a>
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold text-white" href="#">
+        <img src="Logo2.png" alt="Whitepace">
+      </a>
 
-    <!-- Toggle Button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Navbar Content -->
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <!-- Navbar Links + Buttons inside collapse -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center gap-lg-2 me-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#">Products <i class="bi bi-chevron-down ms-1"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solutions <i class="bi bi-chevron-down ms-1"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resources <i class="bi bi-chevron-down ms-1"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pricing <i class="bi bi-chevron-down ms-1"></i></a></li>
+        </ul>
 
-      <!-- Center Nav Items -->
-      <ul class="navbar-nav mx-auto text-center gap-lg-2 mt-3 mt-md-0">
-        <li class="nav-item"><a class="nav-link" href="#">Products <i class="bi bi-chevron-down ms-1"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Solutions <i class="bi bi-chevron-down ms-1"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Resources <i class="bi bi-chevron-down ms-1"></i></a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Pricing <i class="bi bi-chevron-down ms-1"></i></a></li>
-      </ul>
-
-      <!-- Right Buttons -->
-      <div class="d-flex flex-column flex-md-row gap-4 mt-3 mt-md-0">
-        <a href="#" class="btn btn-warning px-4 py-2">Login</a>
-        <a href="#" class="btn btn-primary px-4 py-2">Try Whitepace free →</a>
+        <!-- Buttons (now inside collapse too) -->
+        <div class="d-flex flex-column flex-lg-row gap-2 text-center">
+          <a href="#" class="btn btn-warning btn-custom">Login</a>
+          <a href="#" class="btn btn-primary btn-custom">Try Whitepace free →</a>
+        </div>
       </div>
+
     </div>
-  </div>
-</nav>
+  </nav>
 
 
 
@@ -184,37 +183,44 @@
   </section>
 
 
+<!-- Section light -->
+<section class="section-light py-5">
+  <div class="container">
+    <div class="row align-items-center">
 
+      <!-- Left Image -->
+      <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+        <div class="custom-img"></div>
+      </div>
 
-  <!-- Second Section -->
-  <section class="section-light">
-    <div class="container">
-      <div class="row align-items-center">
-
-        <!-- Left Image -->
-        <div class="col-lg-6 col-md-6 text-center mt-4 mt-lg-0">
-          <div class="custom-img"></div>
-        </div>
-
-        <!-- Right Content -->
-        <div class="col-lg-6 col-md-6 
-                  pt-2 pb-5 
+      <!-- Right Content -->
+      <div class="col-lg-6 col-md-12
+                  pt-5 pb-5 
                   text-center text-md-start 
                   d-flex flex-column align-items-center align-items-md-start 
                   mb-4 mb-lg-0">
-          <h2 class="custom-heading display-6 display-md-5 display-lg-4">
-            Customise it to <br><span class="underline-img">your needs</span>
-          </h2>
-          <p class="custom-paragraph fs-7 fs-md-7">
+
+        <div class="left-fixed-width">
+          <!-- Responsive heading using Bootstrap font sizes -->
+          <h1 class="heading fw-bold mb-3 fs-72 fs-md-1">
+            Customise it to
+            <span class="underline-img">your needs</span>
+          </h1>
+
+          <!-- Responsive paragraph -->
+          <p class="custom-paragraph fs-18 fs-md-5">
             Customise the app with plugins, custom themes and multiple text editors
             (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
           </p>
+
           <button class="btn btn-custom btn-lg">Let’s Go →</button>
         </div>
 
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
 
 
