@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitepace Hero Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      background: url("Element2.png") no-repeat center center/cover; /* uploaded bg image */
+      min-height: 100vh; /* full screen height */
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+    /* Overlay for background color */
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #043873;
+      opacity: 0.85;
+      z-index: 1;
+    }
+
+    /* Content in hero */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content h1 {
+      font-size: 72px;
+      font-weight: bold;
+    }
+
+    .hero-content p {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .btn-blue {
+      background: #4f9cf9;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .btn-blue:hover {
+      background: #2f7ce3;
+    }
+
+    .btn-yellow {
+      background: #ffda77;
+      color: #000;
+      padding: 12px 30px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .btn-yellow:hover {
+      background: #f5c94d;
+    }
+
+    /* Right side hero image */
+    .hero-img img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Secondary section placeholder */
+    .placeholder-img {
+      background: #cfe2ff;
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:#043873;">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+        <img src="Logo2.png" alt="logo" class="me-2" height="40">
+      </a>
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        </ul>
+        <a href="#" class="btn btn-yellow me-2">Login</a>
+        <a href="#" class="btn btn-blue">Try Whitepace free →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="fw-bold">Get More Done with Whitepace 
+          </h1>
+          <p>
+            Project management software that enables your teams to collaborate,
+            plan, analyze and manage everyday tasks
+          </p>
+          <a href="#" class="btn btn-blue mt-3">Try Whitepace free →</a>
+        </div>
+        <!-- Right Image -->
+        <div class="col-lg-6 mt-4 mt-lg-0 hero-img">
+          <img src="Image-container.png" alt="Hero Illustration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-6 text-center text-lg-start">
+          <h2 class="fw-bold">
+            Project <br>
+            <span class="fw-bold">Management</span>
+            <img src="vector heading bottom.png" alt="icon" height="40">
+          </h2>
+          <p class="mt-3">
+            Images, videos, PDFs and audio files are supported. Create math expressions and
+            diagrams directly from the app. Take photos with the mobile app and save them to a note.
+          </p>
+          <a href="#" class="btn btn-primary mt-3">Get Started →</a>
+        </div>
+        <!-- Right Image Placeholder -->
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="placeholder-img"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

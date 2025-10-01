@@ -1,5 +1,6 @@
  body {
    font-family: Arial, sans-serif;
+   max-width: 1920px;
  }
  .navbar {
        background: #043873;
@@ -15,6 +16,7 @@
       color: #fff !important;
       margin: 0 8px;
       font-weight: 500;
+      font-size: 10px;
     }
 
     .navbar-nav .nav-link:hover {
@@ -22,23 +24,38 @@
     }
 
     .btn-custom {
-      padding: 10px 24px;
+      padding: 8px 15px;
       font-weight: 500;
       border-radius: 6px;
       white-space: nowrap;
-      min-width: 120px;
+      min-width: 90px;
       text-align: center;
+      font-size: 12px;
     }
-
-   .btn-warning.btn-custom {
+     .btn-custom-1 {
+      padding: 10px 10px;
+      font-weight: 500;
+      border-radius: 6px;
+      white-space: nowrap;
+      min-width: 70px;
+      text-align: center;
+      font-size: 12px;
+    }
+   .btn-warning.btn-custom-1 {
       background: #FFE492;
       border: none;
       color: #000;
     }
-
     .btn-primary.btn-custom {
       background: #4F9CF9;
       border: none;
+      width: 150px;
+      font-size: 12px;
+       padding: 8px 15px;
+       padding-top: 10px;
+      font-weight: 50;
+      white-space: nowrap;
+      text-align: center;
     }
 
    .btn-primary.btn-custom  {
@@ -50,34 +67,42 @@
  .hero {
    background: #043873;
    color: #fff;
-   padding: 100px 0;
+   padding: 115px 15px;
    position: relative;
    overflow: hidden;
  }
 
  .hero h1 {
    font-weight: 700;
-   font-size: 64px;
+   font-size: 55px;
  }
 
  .hero p {
-   margin: 15px 5px 30px 0;
+   margin: 10px 5px 40px 0;
    font-size: 18px;
    color: #d1d9e6;
  }
 
  /* Background Wave */
- .hero::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: url('') no-repeat center;
-   background-size: cover;
-   opacity: 0.2;
- }
+.hero {
+  position: relative; /* zaroori hai taake ::before iske andar hi aaye */
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 600px;
+  margin-top: 60px;
+  background: url('Element2.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -1; 
+}
+
 
  .hero-content {
    position: relative;
@@ -96,14 +121,13 @@
  .section-2-text h1 {
    font-weight: 700;
    color: #212529;
-   font-size: 72px;
+   font-size: 60px;
  }
 
- .section-2-text p {
+ .section-2 p {
    color: #212529;
    font-weight: 400;
-   font-size: 18px;
-   margin: 20px 0;
+   font-size: 16px;
 
  }
 
@@ -115,13 +139,36 @@
    border-radius: 6px;
    font-weight: 500;
  }
+ 
+ 
+ .section-2 {
+  position: relative;
+  z-index: 1;
+}
+
+.section-2::before {
+  content: "";
+  position: absolute;
+  top: 60%;        
+  width: 320px;   
+  height: 700px;    
+  background: url("sectio2back.png") no-repeat center center;
+  background-size: contain;  /* image apni proportion me chhoti hogi */
+  opacity: 0.2;
+  transform: translateY(-50%); /* bilkul center */
+  z-index: -1;      /* text aur content ke peeche */
+}
+
+
+
 
 
 
  .section-3 {
    padding: 60px 0;
    background: #fff;
-   margin-bottom: 20px;
+   margin-bottom: 40px;
+   margin-top: 0;
  }
 
  .section-3-text h1 {
@@ -135,8 +182,8 @@
  .section-3-text p {
    color: #212529;
    font-weight: 400;
-   font-size: 18px;
-   margin: 50px 0;
+   font-size: 14px;
+   margin: 30px 0;
    margin-left: 25px;
  }
 
@@ -163,12 +210,6 @@
 
  /*   section 4*/
  /*   section 5*/
- .section-dark {
-   background-color: #083674;
-   /* Dark Blue */
-   color: #fff;
-   padding: 60px 0;
- }
 
  .section-light {
    background-color: #fff;
@@ -203,7 +244,7 @@
    background-color: #003366;
    color: white;
    padding: 80px 0;
-   margin-bottom: 50px;
+   margin-top: 100px;
  }
 
  .section-light {
@@ -221,20 +262,20 @@
  }
 
  .section-light p {
-   font-size: 18px;
+   font-size: 15px;
    margin-top: -7px;
    margin-bottom: 35px;
  }
 
  /* FIXED */
- .left-fixed-width {
+ .left-fixed-width h2 {
    max-width: 700px;
    /* optional: keeps text balanced */
  }
 
  /* Paragraph inside left-fixed-width */
  .left-fixed-width .custom-paragraph {
-   font-size: 18px;
+   font-size: 15px;
    margin-top: -7px;
    margin-bottom: 35px;
  }
@@ -351,32 +392,35 @@
    margin-bottom: 60px;
  }
 
- .section-subtitle {
+ .subtitle {
    color: #212529;
-   font-size: 18px;
+   font-size: 14px;
    margin-bottom: 15px;
  }
 
- .section-title {
-   font-size: 72px;
+ .section-title{
+   font-size: 50px;
    font-weight: 700;
-   margin-bottom: 20px;
+   margin-bottom: 5px;
    color: #212529;
  }
 
  .pricing-section {
    padding: 70px 0;
    text-align: center;
+   margin-bottom: 50px;
  }
 
  .pricing-card {
    border-radius: 10px;
    padding: 30px;
+   margin-top: 45px;
    justify-content: left;
    text-align: left;
-   height: 350px;
+   height: 200px;
    transition: all 0.3s ease-in-out;
    background: #fff;
+   height: 90%;
  }
 
  .pricing-card:hover {
@@ -394,13 +438,12 @@
  .pricing-mid {
    background-color: #11357e;
    color: #fff;
-   min-height: 500px;
+   height: 530px;
    border: none;
    margin-top: -10px;
    margin-bottom: -20px;
-   border-radius: 10px;
-   padding: 50px;
-   padding-top: -40px;
+   padding: 30px;
+   padding-top: -30px;
    justify-content: left;
    text-align: left;
    transition: all 0.3s ease-in-out;
@@ -422,6 +465,7 @@
    font-size: 28px;
    font-weight: bold;
    margin-bottom: 20px;
+   color: #f3c12a;
  }
 
  .pricing-mid ul {
@@ -478,7 +522,7 @@
 
  .pricing-card ul li {
    margin-bottom: 12px;
-   font-size: 15px;
+   font-size: 14px;
    display: flex;
    align-items: center;
  }
@@ -487,6 +531,7 @@
    width: 18px;
    height: 18px;
    margin-right: 10px;
+   color: #FFE492;
  }
 
  /* Active plan icons → yellow */
@@ -497,7 +542,7 @@
  .btn-pricing {
    width: 50%;
    padding: 12px;
-   font-size: 16px;
+   font-size: 15px;
    font-weight: 500;
    border-radius: 8px;
  }
@@ -527,6 +572,7 @@
    background-color: #0066ff;
    color: #ffffff;
    font-weight: bold;
+   max-width: 50%;
  }
 
 
@@ -534,7 +580,25 @@
 
 
 
+.work-section{
+  margin: 0%;
+}
+.fw-bold{
+  font-size: 60px;
+}
+.mt-3{
+  font-size: 15px;
+}
 
+
+
+
+
+
+.text-muted {
+  font-size: 14px;
+  width: 600px;
+}
 
 
 
@@ -552,15 +616,43 @@
 
  .hero-section h1 {
    font-weight: 700;
-   font-size: 72px;
+   font-size: 60px;
 
  }
 
  .hero-section p {
-   font-size: 18px;
+   font-size: 15px;
    margin-top: 15px;
    margin-bottom: 25px;
  }
+
+ /* Background Wave */
+.hero-section {
+  position: relative; /* zaroori hai taake ::before iske andar hi aaye */
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  margin-top: 60px;
+  background: url('Element2.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -1; 
+}
+
+
+ .hero-section-content {
+   position: relative;
+   z-index: 2;
+ }
+
+
 
  /* Clients Section */
 
@@ -571,12 +663,12 @@
 
  .clients-section h2 {
    font-weight: 700;
-   font-size: 72px;
+   font-size: 50px;
  }
 
  .testimonial-card {
    border-radius: 12px;
-   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
    padding: 30px;
    min-height: 350px;
    text-align: left;
@@ -587,10 +679,9 @@
    color: #0d47a1;
    margin-top: 10px;
  }
-
  .testimonial-card p {
-   font-size: 18px;
-   margin: 15px 0;
+   font-size: 15px;
+   margin: 20px 0;
    position: relative;
  }
 
@@ -647,10 +738,11 @@
 
  .footer-cta h2 {
    font-weight: 700;
+   font-size: 50px;
  }
 
  .footer-cta p {
-   margin: 15px 0;
+   margin: 20px 0;
  }
 
  .footer-main {
