@@ -7,48 +7,61 @@
   <title>Whitepace</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
- <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background:#043873;">
     <div class="container">
-
       <!-- Logo -->
-      <a class="navbar-brand fw-bold text-white" href="#">
-        <img src="Logo2.png" alt="Whitepace">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+        <img src="Logo2.png" alt="logo" class="me-1" height="25">
       </a>
-
-      <!-- Toggle Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
 
-      <!-- Navbar Links + Buttons -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav text-center gap-lg-1 me-lg-3">
-          <li class="nav-item"><a class="nav-link" href="#">Products <i class="bi bi-chevron-down ms-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Solutions <i class="bi bi-chevron-down ms-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Resources <i class="bi bi-chevron-down ms-1"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Pricing <i class="bi bi-chevron-down ms-1"></i></a></li>
+        <ul class="navbar-nav me-4 fs-9">
+          <li class="nav-item">
+            <a class="nav-link text-white small d-flex align-items-center" href="#">
+              Products <i class="bi bi-chevron-down ms-1 fs-12"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white small d-flex align-items-center" href="#">
+              Solutions <i class="bi bi-chevron-down ms-1 fs-6"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white small d-flex align-items-center" href="#">
+              Resources <i class="bi bi-chevron-down ms-1 fs-6"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white small d-flex align-items-center" href="#">
+              Pricing <i class="bi bi-chevron-down ms-1 fs-6"></i>
+            </a>
+          </li>
         </ul>
 
-        <!-- Buttons) -->
-        <div class="d-flex flex-column flex-lg-row gap-3 text-center">
-          <a href="#" class="btn btn-warning btn-custom-1">Login</a>
-          <a href="#" class="btn btn-primary btn-custom">Try Whitepace free →</a>
-        </div>
+        <a href="#" class="btn btn-yellow me-3">Login</a>
+        <a href="#" class="btn btn-blue">Try Whitepace free →</a>
       </div>
-
     </div>
   </nav>
 
 
 
-  
+
+
   <section class="hero">
     <div class="container">
       <div class="row align-items-center">
@@ -62,7 +75,7 @@
           <p>
             Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
           </p>
-          <a href="#" class="btn btn-primary">Try Whitepace free →</a>
+          <a href="#" class="btn btn-blue">Try Whitepace free → </a>
         </div>
 
         <!-- Right Image -->
@@ -85,7 +98,10 @@
                   text-center text-md-start 
                   order-1 order-md-1 
                   d-flex flex-column align-items-center align-items-md-start">
-          <h1 class="fw-bold">Project <span class="underline-img">Management</span></h1>
+          <h1 class="fw-bold">
+            <span class="d-sm-inline">Project <span class="underline-img"> Management</span></span>
+          </h1>
+
           <p class="me-3">
             Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the
             app. Take photos with the mobile app and save them to a note.
@@ -113,31 +129,31 @@
 
 
 
-<!----section-3-->
-<section class="section-3">
-  <div class="container">
-    <div class="row align-items-center">
+  <!----section-3-->
+  <section class="section-3">
+    <div class="container">
+      <div class="row align-items-center">
 
-      <!-- Left Image -->
-      <div class="col-lg-6 col-md-12 text-center order-2 order-lg-1">
-        <img src="Work Together Image.png" alt="Hero Illustration" 
-             class="img-fluid" style="max-height: 500px; width: auto;">
-      </div>
+        <!-- Left Image -->
+        <div class="col-lg-6 col-md-12 text-center order-2 order-lg-1">
+          <img src="Work Together Image.png" alt="Hero Illustration" class="img-fluid"
+            style="max-height: 500px; width: auto;">
+        </div>
 
-      <!-- Right Text -->
-      <div class="col-lg-6 col-sm-12 section-3-text 
+        <!-- Right Text -->
+        <div class="col-lg-6 col-sm-12 section-3-text 
                   text-center text-md-start 
                   order-1 order-lg-2">
-        <h1 class="fw-bold">Work <span class="underline-img">together</span></h1>
-        <p>
-          With whitepace, share your notes with your colleagues and collaborate on them.
-          You can also publish a note to the internet and share the URL with others.
-        </p>
-        <a href="#" class="button-try btn btn-primary">Try it now →</a>
+          <h1 class="fw-bold">Work <span class="underline-img"> together</span></h1>
+          <p>
+            With whitepace, share your notes with your colleagues and collaborate on them.
+            You can also publish a note to the internet and share the URL with others.
+          </p>
+          <a href="#" class="btn btn-primary mx-auto mx-md-0">Try it now →</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -171,7 +187,7 @@
         </div>
 
         <!-- Right Image -->
-        <div class="col-lg-6 col-md-6 text-center mt-4 mt-lg-0">
+        <div class="col-lg-6 col-md-6 text-center  mt-lg-0">
           <div class="custom-img"></div>
         </div>
 
@@ -180,44 +196,44 @@
   </section>
 
 
-<!-- Section light -->
-<section class="section-light py-5">
-  <div class="container">
-    <div class="row align-items-center">
+  <!-- Section light -->
+  <section class="section-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
 
-      <!-- Left Image -->
-      <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
-        <div class="custom-img"></div>
-      </div>
+        <!-- Left Image -->
+        <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+          <div class="custom-img"></div>
+        </div>
 
-      <!-- Right Content -->
-      <div class="col-lg-6 col-md-12
+        <!-- Right Content -->
+        <div class="col-lg-6 col-md-12
                   pt-4 pb-4 
                   text-center text-md-start 
                   d-flex flex-column align-items-center align-items-md-start 
                   mb-4 mb-lg-0">
 
-        <div class="left-fixed-width">
-          <!-- Responsive heading using Bootstrap font sizes -->
-          <h1 class="heading fw-bold mb-2 fs-64 fs-md-1">
-            Customise it to
-            <span class="underline-img">your needs</span>
-          </h1>
+          <div class="left-fixed-width">
+            <!-- Responsive heading using Bootstrap font sizes -->
+            <h1 class="custom-heading fw-bold mb-2 fs-md-1">
+              Customise it to
+              <span class="underline-img">your needs</span>
+            </h1>
 
-          <!-- Responsive paragraph -->
-          <p class="custom-paragraph fs-15 fs-md-5">
-            Customise the app with plugins, custom themes and multiple text editors
-            (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
-          </p>
+            <!-- Responsive paragraph -->
+            <p class="paragraph">
+              Customise the app with plugins, custom themes and multiple text editors
+              (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
+            </p>
 
-          <button class="btn btn-custom btn-lg">Let’s Go →</button>
+            <button class="btn btn-custom btn-lg">Let’s Go →</button>
+          </div>
+
         </div>
 
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -253,6 +269,8 @@
             <button class="btn btn-pricing w-50">Get Started</button>
           </div>
         </div>
+
+
         <!-- Personal Plan -->
         <div class="col-md-4">
           <div class="pricing-mid active">
@@ -266,7 +284,7 @@
               <li><img src="icon.png" alt="check"> Connect primary Google Calendar account</li>
               <li><img src="icon.png" alt="check"> Add due dates, reminders, and notifications to your tasks</li>
             </ul>
-            <button class="button pricing-btn w-50">Get Started</button>
+            <button class="btn btn-custom btn-lg mb-50">Get Started</button>
           </div>
         </div>
 
@@ -296,118 +314,114 @@
 
 
 
-  <section class="work-section py-5 mb-5  text-white position-relative" style="background-color:#0d2a63; background-image: url('BACKGROUND.png');
+  <section class="work-section py-5 mb-5 text-lg-center text-white position-relative" style="background-color:#0d2a63; background-image: url('BACKGROUND.png');
  background-repeat:no-repeat; background-position:left center;  background-size: 350px 650px;">
-    <div class="container text-center mt-5 mb-5">
+    <div class="container mt-5 mb-5">
       <h2 class="fw-bold">Your work, everywhere <span class="underline-img-blue"> you are</span></h2>
       <p class="mt-3 mx-auto" style="max-width: 900px;">
         Access your notes from your computer, phone or tablet by synchronizing with various services,
         including Whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS.
         A terminal app is also available!
       </p>
-      <a href="#" class="btn btn-primary mt-3">Try Taskey →</a>
+      <button class="btn btn-custom btn-lg">Try Taskey →</button>
     </div>
   </section>
 
 
 
-<section class="py-5 bg-white mb-5">
-  <div class="container">
-    <div class="row align-items-center g-1">
+  <section class="py-5 bg-white mb-5">
+    <div class="container">
+      <div class="row align-items-center g-1">
 
-      <!-- Right Image -->
-      <div class="col-lg-6 col-md-12 text-center order-1 order-lg-2 mt-4 mt-lg-0 pt-5">
-        <img src="Element.png" alt="Element" class="img-fluid">
-      </div>
+        <!-- Right Image -->
+        <div class="col-lg-6 col-md-12 text-center order-1 order-lg-2 mt-4 mt-lg-0 pt-5">
+          <img src="Element.png" alt="Element" class="img-fluid">
+        </div>
 
-      <!-- Left Text -->
-      <div class="col-lg-6 col-md-12 order-2 order-lg-1 
+        <!-- Left Text -->
+        <div class="col-lg-6 col-md-12 order-2 order-lg-1 
                   d-flex flex-column justify-content-center 
                   text-center text-md-start">
 
-        <h2 class="fw-bold display-6 mt-4">
-          100% <span class="underline-img">your data</span>
-        </h2>
+          <h2 class="fw-bold display-6 fs-50 mt-4">
+            100% <span class="underline-img">your data</span>
+          </h2>
 
-        <p class="text-muted small">
-          The app is open source and your notes are saved to an open format,
-          so you’ll always have access to them. Uses End-To-End Encryption (E2EE)
-          to secure your notes and ensure no-one but yourself can access them.
-        </p>
+          <p class="text-muted small">
+            The app is open source and your notes are saved to an open format,
+            so you’ll always have access to them. Uses End-To-End Encryption (E2EE)
+            to secure your notes and ensure no-one but yourself can access them.
+          </p>
 
-        <div class="d-flex justify-content-center justify-content-md-start mt-3">
-          <a href="#" class="btn btn-primary btn-lg mt-3">Read more →</a>
+          <div class="d-flex justify-content-center justify-content-md-start mt-3">
+            <button class="btn btn-custom btn-lg">Read more →</button>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
 
 
-</section>
-<section class="py-5 mb-4">
-  <div class="container-fluid px-lg-5 px-5"> <!-- zyada left-right margin -->
-    <div class="row justify-content-center gx-2 gy-2"> <!-- gx kam = gap kam -->
-       <h3 class="fw-bold mb-5 text-center">
-      Our <span class="underline-img">sponsors</span>
-    </h3>
-      
-      <!-- Image 1 -->
-      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-        <img src="Apple.png" alt="Apple" style="max-width:180px;">
+  </section>
+  <section class="py-5 mb-4">
+    <div class="container-fluid px-lg-5 px-5"> <!-- zyada left-right margin -->
+      <div class="row justify-content-center gx-2 gy-2"> <!-- gx kam = gap kam -->
+        <h4 class="fw-bold mb-4 text-center">
+          Our <span class="underline-img">sponsors</span>
+        </h4>
+        <!-- Image 1 -->
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center mb-5 mb-md-3">
+          <img src="Apple.png" alt="Apple" style="max-width:180px;">
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center mb-5 mb-md-3">
+          <img src="Microsoft.png" alt="Microsoft" style="max-width:180px;">
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center mb-5 mb-md-3">
+          <img src="Slack.png" alt="Slack" style="max-width:180px;">
+        </div>
+
+        <!-- Image 4 -->
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center mb-5 mb-md-3">
+          <img src="Google.png" alt="Google" style="max-width:180px;">
+        </div>
+
+
       </div>
-
-      <!-- Image 2 -->
-      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-        <img src="Microsoft.png" alt="Microsoft" style="max-width:180px;">
-      </div>
-
-      <!-- Image 3 -->
-      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-        <img src="Slack.png" alt="Slack"  style="max-width:180px;">
-      </div>
-
-      <!-- Image 4 -->
-      <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
-        <img src="Google.png" alt="Google" style="max-width:180px;">
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
 
 
 
-<!-- Hero Section -->
-<section class="hero-section text-center py-6 text-white mt-5">
-  <div class="container">
-    <div class="row align-items-center">
+  <!-- Hero Section -->
+  <section class="hero-section text-center py-6 text-white mt-5">
+    <div class="container">
+      <div class="row align-items-center">
 
-      <!-- Left Image (smaller width on lg screens) -->
-      <div class="col-lg-5 col-md-12 text-center mb-4 mb-lg-0">
-        <img src="Apps.png" alt="App Icons" 
-             class="img-fluid" 
-             style="max-width: 80%; height: auto;">
+        <!-- Left Image (smaller width on lg screens) -->
+        <div class="col-lg-5 col-md-12 text-center mb-4 mb-lg-0">
+          <img src="Apps.png" alt="App Icons" class="img-fluid" style="max-width: 90%; height: auto;">
+        </div>
+
+        <!-- Right Text (larger width on lg screens) -->
+        <div class="col-lg-7 col-md-12 text-lg-start text-center">
+          <h1 class="fw-bold mb-3">
+            Work with Your Favorite Apps Using whitepace
+          </h1>
+          <p class="mb-4">
+            Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier
+            to have all the tools you need for your project success.
+          </p>
+          <button class="btn btn-custom btn-lg">Read more →</button>
+        </div>
+
       </div>
-
-      <!-- Right Text (larger width on lg screens) -->
-      <div class="col-lg-7 col-md-12 text-lg-start text-center">
-        <h1 class="fw-bold mb-3">
-          Work with Your Favorite Apps Using whitepace
-        </h1>
-        <p class="mb-4">
-          Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier 
-          to have all the tools you need for your project success.
-        </p>
-        <a href="#" class="btn btn-primary btn-lg">
-          Read more →
-        </a>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -436,7 +450,7 @@
         </div>
         <!-- Card 2 -->
         <div class="col-md-4">
-          <div class="testimonial-card bg-primary text-white">
+          <div class="testimonial bg-primary text-white">
             <div class="quote text-white"><img src="Quote1.png" alt=""></div>
             <p>Whitepace is designed as a collaboration tool for businesses that is a full project management solution.
             </p>
@@ -452,7 +466,7 @@
 
         <!-- Card 3 -->
         <div class="col-md-4">
-          <div class="testimonial-card bg-primary text-white">
+          <div class="testimonial bg-primary text-white">
             <div class="quote text-white"><img src="Quote1.png" alt=""></div>
             <p>Whitepace is designed as a collaboration tool for businesses that is a full project management solution.
             </p>
@@ -474,98 +488,107 @@
 
 
   <!-- Call to Action Section -->
-  <section class="footer-cta text-center">
-    <div class="container">
-      <h2>Try Whitepace <br> today</h2>
-      <p>Get started for free. <br> Add your whole team as your needs grow.</p>
-      <a href="#" class="btn button-primary">Try Taskey Free →</a>
-      <p>On a big team? Contact sales</p>
-      <div class="d-flex justify-content-center gap-4 mt-3">
-        <i class="bi bi-apple fs-1"></i>
-        <i class="bi bi-windows fs-1"></i>
-        <i class="bi bi-android2 fs-1"></i>
-      </div>
-    </div>
-  </section>
+<section class="footer-cta text-center text-sm-start">
+  <div class="container">
+    <h2>Try Whitepace <br> today</h2>
+    <p>Get started for free. <br> Add your whole team as your needs grow.</p>
+    <button class="btn btn-custom btn-lg">Try Taskey Free →</button>
+    <p>On a big team? Contact sales</p>
+   <div class="d-flex justify-content-center justify-content-sm-start justify-content-lg-center gap-4 mt-3">
+  <i class="bi bi-apple fs-1"></i>
+  <i class="bi bi-windows fs-1"></i>
+  <i class="bi bi-android2 fs-1"></i>
+</div>
 
-  <!-- Footer -->
+  </div>
+</section>
+
+
+
+
+
+
   <footer>
     <div class="footer-main">
       <div class="container">
-        <div class="row gy-4">
+        <!-- gy-4 se har column ke beech vertical space (sm screen par bhi) -->
+        <div class="row gy-4 text-start">
 
           <!-- Logo / About -->
-          <div class="col-md-3">
-            <h5>whitepace</h5>
-            <p>Whitepace was created for the new ways we live and work. We make a better workspace around the world.</p>
+          <div class="col-md-3 col-sm-12">
+            <img src="Logo2.png" alt="logo" class="me-1 mb-3" height="30"> <!-- logo ke neeche mb-3 -->
+            <p class="mb-5">Whitepace was created for the new ways we live and work.
+              We make a better workspace around the world.
+            </p>
           </div>
 
           <!-- Product -->
-          <div class="col-md-2">
-            <h5>Product</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Customer stories</a></li>
+          <div class="col-md-2 col-sm-12">
+            <h5 class="mb-2">Product</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="#">Overview</a></li>
+              <li class="mb-2"><a href="#">Pricing</a></li>
+              <li class="mb-5"><a href="#">Customer stories</a></li>
             </ul>
           </div>
 
           <!-- Resources -->
-          <div class="col-md-2">
-            <h5>Resources</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Guides & tutorials</a></li>
-              <li><a href="#">Help center</a></li>
+          <div class="col-md-2 col-sm-12">
+            <h5 class="mb-2">Resources</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="#">Blog</a></li>
+              <li class="mb-2"><a href="#">Guides & tutorials</a></li>
+              <li class="mb-5"><a href="#">Help center</a></li>
             </ul>
           </div>
 
           <!-- Company -->
-          <div class="col-md-2">
-            <h5>Company</h5>
-            <ul class="list-unstyled">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Media kit</a></li>
+          <div class="col-md-2 col-sm-12">
+            <h5 class="mb-2">Company</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="#">About us</a></li>
+              <li class="mb-2"><a href="#">Careers</a></li>
+              <li class="mb-5"><a href="#">Media kit</a></li>
             </ul>
           </div>
 
           <!-- Call to Action -->
-          <div class="col-md-3">
-            <h5>Try It Today</h5>
-            <p>Get started for free. Add your whole team as your needs grow.</p>
-            <a href="#" class="btn button-primary">Start Today →</a>
+          <div class="col-md-3 col-sm-12">
+            <h5 class="mb-3">Try It Today</h5>
+            <p class="mb-2">Get started for free. Add your whole team as your needs grow.</p>
+            <button class="btn btn-custom btn-lg">Start Today →</button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Bottom Bar -->
-    <div class="footer-bottom">
-      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <div class="mb-2 mb-md-0">
-          🌐 English<i class="bi bi-chevron-down ms-1"></i>
-          <a href="#">Terms & Privacy</a>
-          <a href="#">Security</a>
-          <a href="#">Status</a>
-          <a href="#"> ©2021 Whitepace LLC.</a>
+    <div class="footer-bottom fs-14">
+      <div class="container d-flex flex-column flex-md-row justify-content-start align-items-start">
+        <div class="d-flex flex-wrap align-items-center gap-2 text-start text-white small">
+          <span>🌐 English<i class="bi bi-chevron-down ms-1"></i></span>
+          <a href="#" class="text-white text-decoration-none">Terms & Privacy</a>
+          <a href="#" class="text-white text-decoration-none">Security</a>
+          <a href="#" class="text-white text-decoration-none">Status</a>
+          <a href="#" class="text-white text-decoration-none">©2021 Whitepace LLC.</a>
         </div>
-        <div class="footer-social">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"><i class="bi bi-twitter"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
+
+        <div class="footer-social d-flex justify-content-start justify-content-lg-end mt-3 mt-lg-0 w-50">
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
         </div>
+
       </div>
     </div>
   </footer>
 
 
 
-
   <!- Bootstrap JS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
