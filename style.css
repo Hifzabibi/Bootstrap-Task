@@ -4,7 +4,13 @@
       padding: 0;
       width: 100%;
     }
-
+   .navbar-nav{
+    font-size: 14px;
+   }
+   .nav-link i{
+    font-size: 10px;
+    margin-right: 10px;
+   }
     /* Right side hero image */
     .hero-img img {
       max-width: 100%;
@@ -138,6 +144,25 @@
   z-index: -1;     
 }
 
+.underline-management {
+  position: relative;
+  display: inline-block;
+  background-image: url('vector heading bottom.png');
+  background-repeat: no-repeat;
+  background-position: center 110%; /* moves image slightly below bottom */
+  background-size: 100% 60%;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  width: 450px;
+  height: 55px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -153,7 +178,7 @@
  .section-3 h1 {
    font-weight: 700;
    color: #212529;
-   font-size: 60px;
+   font-size: 50px;
    margin-top: 5px;
  }
 
@@ -186,6 +211,18 @@
    border-radius: 8px;
  }
 
+.underline-together {
+  position: relative;
+  display: inline-block;
+  background-image: url('vector heading bottom.png');
+  background-repeat: no-repeat;
+  background-position: center 110%; /* moves image slightly below bottom */
+  background-size: 100% 60%;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  width: 290px;
+  height: 55px;
+}
 
 
 
@@ -225,6 +262,18 @@
    margin-top: 100px;
  }
 
+ .underline-extension {
+  position: relative;
+  display: inline-block;
+  background-image: url('vector heading bottom.png');
+  background-repeat: no-repeat;
+  background-position: center 110%; /* moves image slightly below bottom */
+  background-size: 100% 60%;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  width: 280px;
+  height: 57px;
+}
  .section-light {
    background-color: #ffffff;
    color: black;
@@ -242,7 +291,8 @@
  .section-light .paragraph {
    font-size: 13px;
    margin-top: -7px;
-   margin-bottom: 35px;
+   margin-top: 15px;
+   margin-bottom: 30px;
  }
 
  /* FIXED */
@@ -254,8 +304,8 @@
  /* Paragraph inside left-fixed-width */
  .left-fixed-width .custom-paragraph {
    font-size: 14px;
-   margin-top: -7px;
-   margin-bottom: 35px;
+   margin-top: 15px;
+   margin-bottom: 30px;
  }
 
  .custom-img {
@@ -278,6 +328,18 @@
    font-weight: 500;
  }
 
+ .underline-your-needs {
+  position: relative;
+  display: inline-block;
+  background-image: url('vector heading bottom.png');
+  background-repeat: no-repeat;
+  background-position: center 110%; /* moves image slightly below bottom */
+  background-size: 100% 60%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 430px;
+  height: 57px;
+}
 
 
 
@@ -290,30 +352,26 @@
 
  .image-col {
    padding-left: 30px;
- }
+ }.section-title .underline-yourplan {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title .underline-yourplan::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: 0px;
+  width: 340px;
+  height: 35px;
+   background-size: 100% 70%; 
+  background: url('vector heading bottom.png') no-repeat left bottom;
+  background-size: 100% 100%;
+}
 
 
 
- /* vector underline meading */
-
- .underline-img {
-   position: relative;
-   display: inline-block;
-   padding-bottom: 20px;
-   z-index: 1;
- }
-
- .underline-img::after {
-   content: "";
-   position: absolute;
-   left: 15px;
-   bottom: 0;
-   width: 125%;
-   height: 90px;
-   background: url('vector heading bottom.png') no-repeat center;
-   background-size: contain;
-   z-index: -1;
- }
 
  .underline-img-blue {
    position: relative;
@@ -325,7 +383,7 @@
    content: "";
    position: absolute;
    left: 0;
-   bottom: -6px;
+   bottom: -8px;
    width: 110%;
    height: 40px;
    background: url('vector blue back heading.png') no-repeat center;
@@ -343,8 +401,8 @@
    content: "";
    position: absolute;
    left: 15px;
-   bottom: 9px;
-   width: 150%;
+   bottom: -9px;
+   width: 170%;
    height: 60px;
    background: url('vector heading bottom.png') no-repeat center;
    background-size: contain;
@@ -559,6 +617,42 @@
 
 
 
+ .underline-img {
+  position: relative;
+  display: inline-block;
+  background-image: url('vector heading bottom.png');
+  background-repeat: no-repeat;
+  background-position: center 110%; /* moves image slightly below bottom */
+  background-size: 100% 75%;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  width: 240px;
+  height: 57px;
+}
+
+
+
+
+
+
+ .underline-sponsors {
+  position: relative;
+  display: inline-block;
+  background-image: url('vector heading bottom.png');
+  background-repeat: no-repeat;
+  background-position: center 130%; /* moves image slightly below bottom */
+  background-size: 100% 70%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 235px;
+  height: 57px;
+}
+
+
+
+
+
+
 
 .work-section{
   margin: 0%;
@@ -634,6 +728,20 @@
 
  /* Clients Section */
 
+.underline-img-client{
+ position: relative;
+  display: inline-block;
+  background-image: url('vector heading bottom.png');
+  background-repeat: no-repeat;
+  background-position: center 110%; /* moves image slightly below bottom */
+  background-size: 100% 90%;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  width: 90px;
+  height: 57px;
+}
+
+
  .clients-section {
    margin-top: 30px;
    margin-bottom: 30px;
@@ -654,7 +762,7 @@
 
  .testimonial-card .quote {
    font-size: 40px;
-   color: #0d47a1;
+   color: #043873;
    margin-top: 10px;
  }
  .testimonial-card p {
@@ -684,6 +792,8 @@
    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
    padding: 30px;
    min-height: 350px;
+   background: #4F9CF9;
+
    text-align: left;
  }
 
@@ -765,6 +875,7 @@
  .footer-cta h2 {
    font-weight: 700;
    font-size: 50px;
+   width: 100%;
  }
 
  .footer-cta p {
@@ -811,7 +922,6 @@
  .footer-social a {
    color: #ffffff;
    font-size: 14px;
-   margin-left: 15px;
    transition: 0.3s;
  }
 
@@ -827,7 +937,7 @@
  .mb-2.mb-md-0 a {
    color: #fff;
    text-decoration: none;
-   margin: 0 30px;
+   margin: 0 1px;
  }
 
  .mb-2.mb-md-0 a:hover {
